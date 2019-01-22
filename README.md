@@ -1,6 +1,6 @@
-##Offr Page Design##
+## Offr Page Design
 
-#####Download Instructions#####
+##### Download Instructions
 
 * Create a new folder on your PC
 * Change directory `cd` to that folder using the Node.js Command line
