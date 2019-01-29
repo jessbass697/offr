@@ -3,91 +3,83 @@ body {
   line-height:1.4;
 }
 
-.info {
-  overflow:hidden;
-  text-align:center;
-  curser:default;
-}
-
-.info .overlay {
-  width:400px;
-  height:300px;
-  position:absolute;
-  overflow:hidden;
-  top:0px;
-  left:0px;
-}
-
-.info h2 {
+.icon {
+  position:relative;
+  font-size: 40px;
   color:$h2font;
-  text-align:center;
+  top:20px;
+}
+
+.headerView {
   position:relative;
   font-size:30px;
+  color:$h2font;
+  top:20px;
+  left:8px;
   font-family:$headerFont;
-  padding:10px;
-  margin:20px 0 0 0;
 }
 
-.info p {
+tr {
+  margin-top:10px;
+}
+
+thead {
+  background-color:$h2font;
+}
+
+th {
+  color:$hover;
   font-family:$pFont;
-  font-size:25px;
-  position:relative;
-  color:$icon;
-  padding: 10px 20px 0px;
   text-align:center;
 }
 
-.info-person img {
-  transform: scaleY(1);
-  transition: all .7s ease-in-out;
+tbody{
+  background-color: rgba(253, 228, 242, 0.2);
 }
 
-.info-person .overlay {
-  background-color: $hover;
-  transition: all 0.5s linear;
-  opacity: 0;
-}
-
-.info-person h2 {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  background:transparent;
-  margin: 20px 40px 0px 40px;
-  transform: scale(0);
+td {
+  text-align:center;
+  font-family:$pFont;
   color:$h2font;
-  transition: all 0.5s linear;
-  opacity: 0;
 }
 
-.info-person p {
-  color:$icon;
-  opacity:0;
-  transform: scale(0);
-  transition: all 0.5s linear;
+.month {
+  text-align:center;
+  position:relative;
 }
 
-.info-person:hover img {
-  -webkit-transform: scale(10);
-  transform: scale(10);
-  opacity:0;
+.day {
+  text-align:center;
+  font-size:25px;
+  position:relative;
+  top:-20px;
+  font-weight:bold;
 }
 
-.info-person:hover .overlay {
-  opacity: 1;
-}
-
-.info-person:hover h2,
-.info-person p {
-  transform: scale(1);
-  opacity:1;
-}
-
-.icons a {
+button {
+  background-color:$hover;
   text-decoration:none;
-  colour:$icon;
+  font-family:$pFont;
+  font-size:15px;
+  border: 1px solid $border;
+  padding:5px;
+  width:80px;
+  @include transition(color .7s ease);
+  &:hover {
+    background-color:$h2font;
+    color:$hover;
+    font-size:15px;
+  }
 }
 
-.icons a:hover {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  colour:$headerFont;
+.open {
+  color:$openings;
+}
+
+.pending {
+  color:$pending;
+}
+
+.decline {
+  color:$decline;
 }
